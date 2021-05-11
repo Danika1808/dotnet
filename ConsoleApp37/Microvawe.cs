@@ -5,67 +5,56 @@ namespace ConsoleApp37
 {
     public class Microvawe : IMicrovawe
     {
+        private Power _power { get; set; }
+        private Drive _drive { get; set; }
+        private Notification _notification { get; set; }
+        public Microvawe()
+        {
+            _power = new Power();
+            _drive = new Drive();
+            _notification = new Notification();
+        }
         public void Defrost()
         {
-            StartNotification();
-            MicrowavePower = 1000;
-            TurlRight();
-            TurlRight();
-            MicrowavePower = 500;
-            TurlLeft();
-            TurlLeft();
-            MicrowavePower = 200;
-            TurlRight();
-            TurlRight();
-            MicrowavePower = 0;
-            StopNotification();
+            _notification.StartNotification();
+            _power.GetPower(1000);
+            _notification.PowerNotification(_power.MicrowavePower);
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _power.GetPower(500);
+            _notification.PowerNotification(_power.MicrowavePower);
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _power.GetPower(250);
+            _notification.PowerNotification(_power.MicrowavePower);
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _power.GetPower(0);
+            _notification.PowerNotification(_power.MicrowavePower);
+            _notification.StopNotification();
         }
 
         public void Heating()
         {
-            StartNotification();
-            MicrowavePower = 350;
-            TurlRight();
-            TurlRight();
-            TurlRight();
-            TurlRight();
-            TurlRight();
-            TurlLeft();
-            TurlLeft();
-            TurlRight();
-            TurlRight();
-            TurlLeft();
-            TurlLeft();
-            TurlLeft();
-            TurlLeft();
-            MicrowavePower = 0;
-            StopNotification();
-        }
-        private int _power;
-        public int MicrowavePower
-        {
-            get { return _power; }
-            set
-            {
-                _power = value;
-                Console.WriteLine("Задана мощность {0}w ", _power);
-            }
-        }
-        public void TurlLeft()
-        {
-            Console.WriteLine("Повернуть влево");
-        }
-        public void TurlRight()
-        {
-            Console.WriteLine("Повернуть вправо");
-        }
-        public void StopNotification()
-        {
-            Console.WriteLine("Пик-пик-пик - операция завершена");
-        }
-        public void StartNotification()
-        {
-            Console.WriteLine("Пик - начат процесс готовки");
+            _notification.StartNotification();
+            _power.GetPower(350);
+            _notification.PowerNotification(_power.MicrowavePower);
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _drive.TurlLeft();
+            _drive.TurlLeft();
+            _drive.TurlRight();
+            _drive.TurlRight();
+            _drive.TurlLeft();
+            _drive.TurlLeft();
+            _drive.TurlLeft();
+            _drive.TurlLeft();
+            _power.GetPower(0);
+            _notification.PowerNotification(_power.MicrowavePower);
+            _notification.StopNotification();
         }
     }
 }
