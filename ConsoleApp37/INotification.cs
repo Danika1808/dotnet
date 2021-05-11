@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp37
 {
-    interface IMicrovawe
+    interface INotification
     {
-        public void Defrost();
-        public void Heating();
-
+        public void StopNotification();
+        public void StartNotification();
+        public void PowerNotification(int power);
     }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\danik\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\danik\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ConsoleApp37.-300104559.00" t="ExcludeRecursive" />
+    <e p="C:\Users\danik\OneDrive\Documents\GIthub\dotnet" t="IncludeFlat">
+      <e p="ConsoleApp37" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsoleApp37.csproj" t="IncludeRecursive" />
+        <e p="Drive.cs" t="Include" />
+        <e p="IDrive.cs" t="Include" />
+        <e p="IMicrovawe.cs" t="Include" />
+        <e p="INotification.cs" t="Include" />
+        <e p="IPower.cs" t="Include" />
+        <e p="Microvawe.cs" t="Include" />
+        <e p="Notification.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="ConsoleApp37.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Power.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="ConsoleApp37.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
