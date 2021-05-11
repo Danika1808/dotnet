@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp37
 {
-    interface IMicrovawe
+    interface IPower
     {
-        public void Defrost();
-        public void Heating();
-
+        public void GetPower(int powerValue);
     }
 }
