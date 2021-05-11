@@ -7,12 +7,12 @@ namespace ConsoleApp37
         static void Main()
         {
             var microwave = new Microvawe();
-
             Console.WriteLine("Разморозим");
             microwave.Defrost();
             Console.WriteLine();
             Console.WriteLine("Подогреем");
             microwave.Heating();
+            Console.WriteLine("Кушать подано");
         }
     }
 }
